@@ -49,3 +49,6 @@ Feel free to submit issues or pull requests if you have suggestions for improvem
 
 ## License
 This project is open-source and available under the MIT License.
+
+## Software 
+This project was builded on VS code.
