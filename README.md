@@ -9,7 +9,13 @@ This is a simple implementation of the classic Tetris game. The game features ba
 - Score tracking
 - Collision detection
 - Responsive design
-
+## How to play?
+- Press tetris-game
+- Then Press index.html
+- After that download the file
+- And after it downloads Open the file.
+- *Note: This is real official alex I'm not setting up a virus and I will do a showcase video soon*
+  
 ## Getting Started
 
 ### Prerequisites
