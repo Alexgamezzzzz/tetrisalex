@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tetris</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Tetris</h1>
+
+    <div id="difficulty-selector">
+        <button id="easy">Easy</button>
+        <button id="medium">Medium</button>
+        <button id="hard">Hard</button>
+        <button id="extreme">Extreme</button>
+        <button id="challenge">Challenge</button>
+    </div>
+
+    <div class="game-controls">
+        <button id="pause-button">Pause</button>
+        <button id="rules-button">Rules</button>
+    </div>
+
+    <div class="game-area">
+        <canvas id="tetris" width="240" height="400"></canvas>
+        <div class="side-panel">
+            <div>
+                <h2>Score: <span id="score">0</span></h2>
+            </div>
+            <div>
+                <h2>High Score: <span id="high-score">0</span></h2>
+            </div>
+            <div>
+                <h2>Time: <span id="timer">0:00</span></h2>
+            </div>
+            <div class="next-piece-container">
+                <h2>Next</h2>
+                <canvas id="next-piece" width="80" height="80"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <!-- Rules Modal -->
+    <div id="rules-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <h2>Game Rules</h2>
+            <p><strong>Objective:</strong> Clear as many horizontal lines as possible.</p>
+            <ul>
+                <li><strong>Move:</strong> Use the <strong>Left</strong> and <strong>Right</strong> arrow keys to move the piece.</li>
+                <li><strong>Rotate:</strong> Use the <strong>Up</strong> arrow key to rotate the piece.</li>
+                <li><strong>Soft Drop:</strong> Use the <strong>Down</strong> arrow key to speed up the piece's descent.</li>
+                <li><strong>Scoring:</strong> You get points for every line you clear. Clearing multiple lines at once gives you more points.</li>
+                <li><strong>Game Over:</strong> The game ends when the pieces stack up to the top of the screen.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Challenge Difficulty Modal -->
+    <div id="challenge-modal" class="modal">
+        <div class="modal-content">
+            <h2>Select Challenge Difficulty</h2>
+            <div id="challenge-difficulty-selector">
+                <button data-difficulty="1000">Easy</button>
+                <button data-difficulty="500">Medium</button>
+                <button data-difficulty="250">Hard</button>
+                <button data-difficulty="100">Extreme</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/tetrominoes.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
